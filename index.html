@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="zeroing/zeroing.css">
+    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="script.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/5c6ff8eb8e.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+
+</head>
+
+<body>
+    <div class="weather">
+        <div class="weather__header header">
+            <div class="header__container container">
+                <div class="header__body" id="navigation">
+                    <div class="header__logo">
+                        <a href="#" class="logo" id="home">
+                            Meteo
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <form id="form">
+                            <input class="header__input text" type="text" id="input__search" placeholder="Search..." value=''>
+                            <label class="header__label hide" id="input__label">Error! Check input data.</label>
+                            <div class="header__btn">
+                                <button class="header__button submit" type="submit" id="btn__search">
+                                    <i class="fas fa-search" id="icon__search"></i>
+                                </button>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="weather__content content home" id="homePage">
+                <div class="content__container container">
+                    <div class="content__body">
+                        <div class="city-tab" id="tabs_cities">
+                            <div class="content__tabs">
+                                <input class="city-tab__input" id="tabs-1" type="radio" name="tab" value="Minsk" checked>
+                                <label class="city-tab__label title" for="tabs-1">Minsk</label>
+    
+                                <input class="city-tab__input" id="tabs-2" type="radio" name="tab" value="Grodno">
+                                <label class="city-tab__label title" for="tabs-2">Grodno</label>
+    
+                                <input class="city-tab__input" id="tabs-3" type="radio" name="tab" value="Gomel">
+                                <label class="city-tab__label title" for="tabs-3">Gomel</label>
+                                
+                                <input class="city-tab__input" id="tabs-4" type="radio" name="tab" value="Brest">
+                                <label class="city-tab__label title" for="tabs-4">Brest</label>
+    
+                                <input class="city-tab__input" id="tabs-5" type="radio" name="tab" value="Mogilev">
+                                <label class="city-tab__label title" for="tabs-5">Mogilev</label>
+    
+                                <input class="city-tab__input" id="tabs-6" type="radio" name="tab" value="Vitebsk">
+                                <label class="city-tab__label title" for="tabs-6">Vitebsk</label>
+                            </div>
+
+                            <div class="cards-cities" id="cities">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__container container">
+                <div class="footer__body">
+                    <div class="footer__link">
+                        <a href="#" class="link">More information</a>
+                        <a href="#" class="link">Detailed Schedule</a>
+                        <a href="#" class="link">Live broadcasts</a>
+                        <a href="#" class="link">Emergencies around the world</a>
+                        <a href="#" class="link">Potential problems</a>
+                    </div>
+                    <div class="footer__logo">
+                        <a href="#" class="logo">
+                            meteo
+                        </a>
+                    </div>
+                    <div class="footer__help">
+                        <div class="help">
+                            <a href="#" class="link">Report inaccuracies</a>
+                            <a href="#" class="link">Report technical issues</a>
+                        </div>
+                        <div class="footer__massage">
+                            <a href="#" class="message"><i class="fab fa-instagram"></i></a> 
+                            <a href="#" class="message"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="message"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
