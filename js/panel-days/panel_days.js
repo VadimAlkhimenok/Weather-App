@@ -1,10 +1,5 @@
-
-
 export const usePanelDays = async () => {
-    
     setTimeout(() => {
-        console.log('usePanelDays: ', panel);
-
         panel.addEventListener('click', event => {
             if (event.target.id === 'today') {
                 console.log('today', today);

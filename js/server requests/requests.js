@@ -14,8 +14,6 @@ export const getCity = city => {
             showError(cityData.cod);
         }
         
-        console.log(cityData);
-
         let { 
             city: {name, country, sunrise, sunset, coord: {lat, lon}},
             list
